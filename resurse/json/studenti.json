@@ -1,0 +1,7 @@
+{"lastId":100,"studenti":[
+{"Numar":1,"nume":"David","prenume":"De Gea","Pozitie":"GK", "Meciuri_jucate":"38","Goluri":"0","Asisturi":"1"},
+{"Numar":2,"nume":"Victor","prenume":"Lindelof","Pozitie":"CB", "Meciuri_jucate":"25","Goluri":"2","Asisturi":"0"},
+{"Numar":6,"nume":"Paul","prenume":"Pogba","Pozitie":"M", "Meciuri_jucate":"30","Goluri":"10","Asisturi":"10"},
+{"Numar":10,"nume":"Marcus","prenume":"Rashford","Pozitie":"LW", "Meciuri_jucate":"32","Goluri":"15","Asisturi":"7"},
+{"Numar":9,"nume":"Anthony","prenume":"Martial","Pozitie":"ST", "Meciuri_jucate":"34","Goluri":"20","Asisturi":"2"},
+{"Numar":8,"nume":"Bruno","prenume":"Fernandes","Pozitie":"M", "Meciuri_jucate":"32","Goluri":"8","Asisturi":"12"}]}

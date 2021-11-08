@@ -1,0 +1,32 @@
+<header>
+
+<nav>
+		<ul class="menu">
+                        <li><a href="index.ejs">First page</a></li>
+						<li><a href="Players.ejs">All players</a></li>
+                        <li><a href="History.ejs">History</a></li>
+                        <li><a href="Season.ejs">Season so far</a></li>
+			             <li><a href="inregistrare.ejs">inregistrare</a></li>
+						   <li><a href="#footer">Go down</a></li>
+		</ul>
+	</nav>
+
+	<h1>United</h1>
+	<!-- datele transmise in render devin  proprietati ale obiectului locals -->
+	<% if(!locals.username) {  %>
+	<form method="post" action="/login">
+		<label>
+				Username: <input type="text" name="username" value="">
+			</label>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			<input type="submit" value="OK">
+	</form>
+	<% }
+	else { %>
+	Utilizator logat: <%= locals.username  %>
+	<a href="/logout">Logout</a>
+	<% } %>
+	<hr/>
+</header>

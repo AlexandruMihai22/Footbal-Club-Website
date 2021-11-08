@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/flavicon.ico"/>
+
+<title id="" > Manchester United Football Club Page</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mancheste United official page">
+  <meta name="keywords" content="sport,football,Premier League">
+  <meta name="author" content="Alexandru Mihai">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/stil.css">
+
+
+</head>
+
+
+
+<header>
+
+	
+
+<%- include("../fragmente/header")  %> 
+
+
+</header>
+
+
+
+<main>
+
+
+
+<h1>  Manchester United Football Club </h1>
+<img src="/images/1.jpg" id="MU" alt="MU" width="80" height="80">
+
+<script src="js/salut.js">  </script>
+                 <div id="salut"></div>
+
+<script src="js/numaratoare_inversa.js">  </script>
+                 <div id="abc">
+                    <h2>Time until next match</h2>
+                    <div>
+                        <div>
+                            <span id="zile">0</span>
+                            Zile
+                        </div>
+        
+                        <div>
+                            <span id="ore">0</span>
+                            Ore
+                        </div>
+        
+                        <div >
+                            <span id="minute">0</span>
+                            Minute
+                        </div>
+                        <div>
+                            <span id="secunde">0</span>
+                            Secunde
+                        </div>
+                    </div>
+                </div>
+                  
+
+<section>
+<h2>This is the official page of <strong>Manchester United</strong> Football Club</h2>
+<p>Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910. </p>
+
+<p>Manchester United was the highest-earning football club in the world for 2016ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ17, with an annual revenue of ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬676.3 million,[11] and the world's third most valuable football club in 2019, valued at ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£3.15 billion ($3.81 billion).[12] As of June 2015, it is the world's most valuable football brand, estimated to be worth $1.2 billion.</p>
+
+
+ 
+</section>
+
+
+
+<script src="js/Culoare.js">  </script>
+
+             <input type="text" id="ButonCuloare">
+             <button type="button" onclick="Culoare()"> Seteaza culoare background </button>
+
+
+
+<script src="js/Age.js"> </script>
+        <div>
+          <label for="Age">Introduceti data nasterii</label>
+          <input type="text" id="Age">
+          <button type="button" id="AgeButton" onclick="Age()">Afiseaza varsta</button>
+          <div id="Age2"></div>
+        </div>
+		
+		
+
+<section id="ofsp">
+<h2 >Official Kit Supplier of Manchester United </h2>
+
+
+<p>adidas is the global leader in football. </p>
+<img src="/images/2.jpg" alt="adidas ">
+
+
+<p>It is the official sponsor / official supplier partner of the most important football tournaments in the world, such as the FIFA World CupÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢, the FIFA Confederations Cup, the UEFA Champions League, the UEFA Europa League and the UEFA European Championships. adidas also sponsors some of the world's top clubs including Manchester United, Real Madrid, FC Bayern Munich, Juventus and AC Milan.</p>
+</section>
+<section id="thr">
+
+<h2>Manchester United trophies</h2>
+<ul>
+  <li>20x times Premier League'champions</li>
+  <li>5x times Uefa Champions League Winners</li>
+  <li>12x times English cup winners</li>
+</ul>
+
+<img src="/images/3.jpg" alt="Ucl win 2008 "  >
+</section>
+
+
+<section id="in">
+
+<h2>Manchester United in form players this week</h2>
+
+
+<figure id="A">
+<img src="/images/4.jpg" alt=" MU" >
+  <figcaption>
+       Anthony Martial is on fire. He scored 3 goals and 2 assists in the last 2 matches.
+                </figcaption>
+</figure>
+
+<figure id="H">
+<img src="/images/5.jpg" alt=" MU"  >
+<figcaption>
+      Harry Maguire was a leader at the back an helped the team keep another clean sheet. United's 14 this season.
+                </figcaption>
+</figure>
+
+</section>
+
+<section  id="next"  class="intro">
+
+<h2>Next Games</h2>
+
+
+<p>Manchester United will face New Castle United on sunday in the Premier League</p>
+<img src="/images/6.jpg" alt="MU " >
+
+
+<p>And up next will be PSG in the Champions League</p>
+<img src="/images/7.jpg" alt=" MU"  >
+
+
+</section>
+
+
+<script src="js/ejs.min.js"></script>
+
+<script src="js/localstorage.js"></script>
+	<script src="js/script.js"></script>
+
+		<body class="container">
+
+    
+    <h2>Players</h2>
+    <p>Continut JSON</p>
+	
+		<div class="afis" id="afisJson">
+    </div>
+		
+    <p>Cu template:</p>
+		
+		
+		<div class="afis" id="afisTemplate">
+		</div>
+		<button onclick = "SortCresc();">Crescator</button> 
+		<button onclick = "SortDescresc();">Descrescator</button>
+		<button onclick = "Goleste();">Goleste</button><br>
+		Nr total goluri: <span id = "nrGoluri"></span><br>
+		Introduceti nr minim de goluri: <input id = "nrMinGoluri" type = "number">
+		<button onclick = "FiltreazaGoluri();">Filtreaza!</button><br><br>
+		Introduceti nr minim de assisturi: <input id = "nrMinAssisturi" type = "number">
+		<button onclick = "FiltreazaAssisturi();">Filtreaza!</button>
+ 
+
+<div id="info"></div>
+		<button id="resteaza_numar">reseteaza numar</button>
+		<button id="resteaza_caracter">reseteaza caracter</button>
+		<button id="resteaza_tot">Da' ia reseteaza tot, mah!</button>
+		
+		 <span id="messages"></span>
+		 
+		 
+ 
+
+</body>
+
+
+<h2>Manchester United official sponsors:</h2>
+<div class="flex-container">
+
+  <div>ADIDAS</div>
+  <div>CHEVROLET</div>
+  <div>AON</div>  
+  <div>KOHLER</div>
+  <div>AEROFLOT</div>
+  <div>CASILLERO</div>  
+  <div>CHIVAS</div>
+  <div>DHL</div>
+  <div>KONAMI</div>
+</div>
+
+
+
+</main>
+             
+                  
+            
+<footer id="footer">
+  
+			<%- include("../fragmente/footer")  %> 
+</footer>
+
+
+</html>

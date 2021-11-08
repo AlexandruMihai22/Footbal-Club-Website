@@ -1,0 +1,308 @@
+*{ 
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+	box-sizing: border-box;
+	}
+
+th,td{
+            border:1px solid black;
+            padding:5px;
+        }
+        td:empty{
+            padding:20px;
+        }
+        table{
+            border-collapse:collapse;
+            empty-cells:show;
+        }
+
+body {
+  background-color: #fefbd8;
+  background-size: cover;
+	height: 100%;
+	margin: 0px;
+	font-family: "Times New Roman";
+}
+
+h1 {
+  background-color: white;
+  color:red;
+   max-width: 100%;
+	text-align: center;
+	margin-left: 90px;
+	margin-bottom: 50px;
+    
+	
+}
+
+h2{
+	
+   width: 100%;
+	text-align: left;
+	margin: 20px 0px;
+}
+
+.intro>p {
+	background-color: red;
+	padding:7px;
+	
+}
+
+	
+	figure>* {
+	display: block;
+	margin-left: 0;
+	margin-right: auto;
+	width: 50%;
+	text-align:left;
+}
+
+figure>figcaption {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.galerie {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.galerie>div {
+	width: 80%;
+	min-width: 250px;
+	flex-basis: 40%;
+	padding: 1%;
+	transition: transform 1s;
+}
+
+.galerie>div:hover {
+	transform: scale(1.2);
+}
+
+
+
+#gr {
+ display:grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-row-gap:0.5em;
+ grid-column-gap:0.5em;
+}
+#gr img{
+  width: 100%;
+}
+#gr figcaption{
+  text-align:center;
+}
+
+#gr figure:hover {
+  box-shadow: grey 0px 0px 7px;
+}
+
+#gr figure{
+  transition: all 1s linear;
+}
+
+.afis{
+	border:2px solid darkblue;
+	padding:0.7em;
+}
+
+.templ_student{
+	border:1px solid grey;
+	padding:0.4em;
+	background:#00bfff;
+}
+
+#container_butoane{
+    border:1px solid rgb(66, 93, 245);
+     background:rgb(242, 244, 255);
+    display:flex;
+    padding:0.5em;
+    flex-wrap:wrap;
+    border-radius: 0.5em;
+    margin-top:0.5em;
+     margin-bottom:0.5em;
+    justify-content:center;
+    
+ }
+ #container_butoane button{
+     width:100px;
+    margin:0.5em;
+     background: white;
+     border:2px solid grey;
+     padding:0.3em;
+     border-radius: 0.4em;
+     min-height:3em;
+     transition:all 0.4s linear;
+ }
+  #container_butoane button.apasat{
+    box-shadow:0px 0px 2px 4px rgb(50,50,50) inset !important;
+     background:grey;
+ }
+ #container_butoane button:hover{
+     background: rgb(255,255,210);
+     box-shadow: grey 0px 0px 0.3em inset;
+ }
+
+
+img#MU{
+	
+	position:absolute;
+	TOP:120px; 
+	LEFT: 10px;
+	width:100px;
+	
+}
+div#info{
+	border:2px solid darkblue;
+	margin-bottom:10px;
+	background:#00bfff;
+}
+
+
+img{
+display:inline;
+border-radius:8px;	
+	margin-top: 10px;
+	margin-bottom: 10px;
+      width:30vw;
+		height:auto;
+}
+
+html{
+
+font-size: 16px;
+
+
+     }
+
+main,footer{
+		padding-left:5%;
+		padding-right:10%;
+		padding-top:60px;
+	}
+
+
+
+	nav{
+		width:100%;
+		position:fixed;
+	}
+
+	ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		
+		font-size:1.2rem;
+		font-weight:bold;
+		height:1.2rem;
+		line-height:1.2rem;
+		text-align:center;		
+		overflow:hidden;
+	}
+	ul.menu>li{
+	 float:left;
+	 width:16.666%;
+	}
+	ul.submenu>li{
+	 width:100%;
+	}
+	ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration:none;
+		color:black;
+	}
+	ul.menu>li:nth-of-type(even) a, ul.menu>li:nth-of-type(even) div{
+		background:white;
+	}
+	ul.menu>li:nth-of-type(odd) a, ul.menu>li:nth-of-type(odd) div{
+		background:#ff6666;
+	}
+
+	ul.menu>li>ul.submenu{
+		position:relative;
+		top:0px;
+	}
+
+	ul.menu>li>ul.submenu>li
+	{
+		border-top:1px solid black;
+	}
+	ul.menu>li>ul.submenu>li:last-child
+	{
+		border-bottom:1px solid black;
+	}
+
+	ul.menu>li>a:hover, ul.submenu>li>a:hover{
+		background:blue;
+	}
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+	
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ff4d4d;
+		margin-top: 10px;
+	
+}
+	
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 7rem;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:700px){
+		p.text{
+		float:none;
+		width:100%;
+		}
+		figure.img-wrap{
+		width:100%;
+		}
+		
+		ul.menu>li{
+		 width:25%;
+		}
+
+		ul.menu>li:hover ul.submenu{
+			width:100vw;
+			position:absolute;
+			left:0px;
+			top:1.2rem;
+			border-top:1px solid blue;
+			border-bottom:1px solid black;
+		}
+		
+
+		ul.menu>li:hover ul.submenu>li{
+			float:left;
+			width:15%;
+			border:none;
+		}
+	}	
+	
+	
+footer {
+	padding: 10px;
+	background: rgb(40, 40, 40);
+	color: white;
+	text-align: center;
+}
+ form{
+	TOP:1000px;  
+	 
+ }
+
+ div#abc{
+
+	background-color: royalblue;color:white;padding:20px;
+
+}
